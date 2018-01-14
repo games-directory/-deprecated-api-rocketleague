@@ -1,13 +1,13 @@
-# PlayStationNetwork::API
+# RocketLeague::API
 
-Retrieve User, Trophies and Game data from PlayStationNetwork.
+Retrieve User, Trophies and Game data from rocketleague.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'playstationnetwork-api', '~> 2.0'
+gem 'rocketleague-api', '~> 1.0'
 ```
 
 And then execute:
@@ -16,48 +16,11 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install playstationnetwork-api
+    $ gem install rocketleague-api
 
 ## Usage
 
-#### Get a User
-`PlayStationNetwork::User.new('pacMakaveli90').profile`
-
-#### Get all Games for a User
-`PlayStationNetwork::User.new('pacMakaveli90').games`
-
-
-#### Get all Trophies for a Game
-`PlayStationNetwork::User.new('pacMakaveli90').trophies('NPWR00132_00')`
-
-
-#### Get a Game
-`PlayStationNetwork::Game.new('NPWR00132_00').details`
-
-
-#### Get all Trophies for a Game
-`PlayStationNetwork::Game.new('NPWR00132_00').trophies`
-
-
-#### Get all Games
-`PlayStationNetwork::Game.new().all(platform: 'ps4') # you don't have to pass an argument. By default, it will get all games.`
-
-#### Get Popular Games
-`PlayStationNetwork::Game.new().all(popular: true)`
-
-## Configuration
-
-In your app, create a new initializer `playstationnetwork.rb` and add the following:
-
-```
-PlayStationNetwork::API.configure do |config|
-  config.key = '<API_KEY>',
-  config.secret = '<API_SECRET>'
-  config.url = '<API_URL>'
-})
-```
-
-Get Endpoint, your Key and Secret from: http://www.psnleaderboard.com/
+TODO
 
 ## Development
 
@@ -67,7 +30,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/games-directory/api-playstationnetwork/. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/games-directory/api-rocketleague/. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License

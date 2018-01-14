@@ -1,12 +1,7 @@
-/.bundle/
-/.yardoc
-/Gemfile.lock
-/_yardoc/
-/coverage/
-/doc/
-/pkg/
-/spec/reports/
-/tmp/
+# Ignore Gemfile.lock
+# 
+*.lock
 
-# rspec failure tracking
-.rspec_status
+# Ignore generated .gem files
+# 
+*.gem
